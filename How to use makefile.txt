@@ -1,0 +1,22 @@
+Windows OS:
+
+To use a makefile to compile your input files, use the nmake command. For example, if your project is your_project.mak:
+
+nmake /f your_project.mak FPP=ifort.exe LINK32=xilink.exe
+
+The arguments of this nmake command are as follows:
+
+/f
+ A particular makefile.
+ 
+your_project.mak
+ A makefile you want to use to generate object and executable files.
+ 
+FPP
+ The compiler-invoking command you want to use. The name of this macro might be different for your makefile. This command invokes the preprocessor.
+ 
+LINK32
+ The linker you want to use.
+ 
+
+The nmake command creates object files (.obj) and executable files (.exe) specified in your_project.mak file.
