@@ -1,0 +1,5 @@
+21 !No of input - desired output sets available for training
+
+2 !No of hidden layers
+
+1 12 12 1  !No of neurons at input layer, at 1st hidden layer, at 2nd hidden layer etc, at output layer

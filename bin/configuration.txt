@@ -1,0 +1,39 @@
+0 !Choose learning mode, 0 for sequential (online) or 1 for batch training 
+
+1 !Present the patterns to the network in a random way. 1-YES or 0-NO. Applies only in sequential learning mode
+
+0.8 !Learning-rate initial value, must be between 0 and 1
+
+3 !Choose method of varying learning-rate. 1-Constant, 2-Step reduction, 3-Search then converge
+
+1000 !Number of epochs after which the learning-rate value will be redused (2-Step reduction)
+
+2.0 !Persentage of learning-rate value reduction (2-Step reduction)
+
+30000 !T constant (3-Search then converge)
+
+1 !Use momentum. 1-YES or 0-NO
+
+0.4 !Momentum value, must be between 0 and 1
+
+1 !Choose if momentum value will decay over the epochs. 1-YES or 0-NO.
+
+2000 !Number of epochs after which the momentum value will be redused
+
+1.0 !Persentage of momentum value reduction
+
+0.0005 !Average squared error, 1st stopping criterio
+
+50000 !Number of epochs, 2nd stopping criterio
+
+2 !Choose suitable activation function, 1-SigmoidLogistic, 2-HyperbolicTangent, 3-Linear
+
+1.0 !alpha value used in sigmoid logistic activation function, alpha>0 [ ö(v)=1/(1+exp(-alpha*v))]
+
+0.5 !alpha value used in hyperbolic tangent or linear activation function, alpha>0 (better results if alpha<1)
+
+0.7 !beta value used in hyperbolic tangent or linear activation function, beta>0 [ö(v)=alpha*tanh(beta*v)]
+
+1.0 !Neuron bias value, value 0.0 means NO bias. Default=1.0
+
+0 !Retrain method, 0-reinitialize weights or 1-keep previous weights
